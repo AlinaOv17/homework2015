@@ -6,7 +6,7 @@ public static void main(String[] args){
 	double A;
 	double B;
 	A = (L / km) * 100; // расход топлива на 100 км
-	B = price / km; // средняя стоимость 1 км пути
+	B = (L / km) * price; // средняя стоимость 1 км пути
 	
 	System.out.println("Fuel consumption for 100 km " + A);
 	System.out.println("Average price for 1 km " + B);
