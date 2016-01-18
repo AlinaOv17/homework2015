@@ -2,7 +2,7 @@ class Exercise26{
 public static void main(String[] args){
 int num = Integer.parseInt (args[0]);
 int sot, des, ed, des1;
-if ( num > 999 && num < 100){
+if ( num > 999 || num < 100){
 	System.out.println("Please, enter the number from 100 to 999");
 }
 
