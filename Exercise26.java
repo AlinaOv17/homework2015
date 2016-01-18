@@ -10,6 +10,7 @@ if ( num > 999 || num < 100){
  des = ((num % 100) -ed) / 10; // десятки
  sot = ((num % 1000) - (num % 100)) / 100; // sotni
 
+ if ( num >99 && num < 1000){
 if ( sot == 1){
 	
 	System.out.print ("One hundred ");
@@ -53,7 +54,7 @@ if ( sot == 8){
 if ( sot == 9){
 	
 	System.out.print ("Nine hundred ");
-	
+}
 }
 
 if (des == 1){
@@ -62,9 +63,7 @@ if (des == 1){
 	 if ( des1 ==11){
 	 System.out.println ("eleven.");
 	 }
-		  if ( des1 ==11){
-		 System.out.println ("eleven.");
-		  }
+		 
 		  if ( des1 ==12){
 		 System.out.println ("twelve."); 
 		  }
