@@ -1,6 +1,7 @@
 class Exercise47{
 	public static void main(String[] args){
 	String text = "This is the text where to find a character";
+	char find= 't';
 	System.out.println (text);
        
 	countChars( "This is the text where to find a character", 't'); 
