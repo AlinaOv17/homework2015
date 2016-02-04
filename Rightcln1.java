@@ -10,29 +10,24 @@ for (i = 0; i <  array.length; ++i){
 	System.out.print(" ");
 }
 	System.out.println(" ");
-	
+	for (i = (array.length-1); i >= 0; i--){
+	System.out.print (array[i]);
+	System.out.print(" ");
+	}
+	System.out.println(" ");
         
-     for (i = (array.length-1-n); i >= 0; i--){
+     for (i = (array.length-n); i < array.length; i++){
+		 System.out.print (array[i]);
+	System.out.print(" ");
+		 
+	 }
+	 			 
+
+for (i =0; i < (array.length-n); i++){
 	System.out.print (array[i]);
 	System.out.print(" ");
-	
-		}
-		
-	for (i = (array.length-1); i > (array.length-1-n); i--){
-	System.out.print (array[i]);
-	System.out.print(" ");
-		}
-		
-		System.out.println(" ");
-		
-	
-	
-	
-	System.out.print (array[i]);
-	System.out.print(" ");
-	
-	
-}		
-	
-}		
 }
+
+}
+		
+}	
