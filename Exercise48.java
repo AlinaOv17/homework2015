@@ -1,19 +1,21 @@
 class Exercise48{
 public static void main(String[] args){
-int a =4;
-int b =15;
-int c =1;
-determ(4, 15, 1);
+determ(39, 150, -11);
+int ar=determ(39, 150, -11);
+System.out.println("The smallest is " + ar);
+}
 
-public static int determ(int[] array){
-	int min = array[0];
-	for (int i =0; i < array.length; i++){
-		if (array[i]< array[0]){
-			int min = array[i];
-		}
-	return min;
+public static int determ(int a, int b, int c){
+	if ( a < b && a < c){
+return a;
+	}
+	if ( b < c && b < a){
+	return b;
+	}
+	else{
+	return c;
 }
-System.out.println ("The smallest is " + min);
+	
 }
-}
+
 }

@@ -5,18 +5,19 @@ for( int i=0; i<array.length; i++){
 System.out.print (array[i]);	
 System.out.print (" ");		
 }
-
-System.out.print("average array is " + avgArray);
-
-static int avgArray(int[] a){
-	int sum =0;
-	int avg =0;
-	for ( int i=0; i<array.length; i++){
-		sum+=array[i];
-		avg=sum/array.length;
+System.out.println();
+double b = avgArray(array);
+System.out.print("The average array is " + b);
+}
+static double avgArray(int[] a){
+	double sum =0;
+	double avg =0;
+	
+	for ( int i=0; i<a.length; i++){
+		sum+=a[i];
+		avg=sum/a.length;
 	}
 	return avg;
 	
-}
 }
 }

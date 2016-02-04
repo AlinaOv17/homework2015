@@ -1,12 +1,4 @@
 class Exercise47{
-	public static void main(String[] args){
-	String text = "This is the text where to find a character";
-	char find= 't';
-	System.out.println (text);
-       
-	countChars( "This is the text where to find a character", 't'); 
-	
-		    
 	static int countChars(String textt, char search){
 	int times = 0;
 	char ch;
@@ -15,8 +7,11 @@ class Exercise47{
 		if (search == ch){
 		times++;}
 		}
-	return times;
-	System.out.println(times);
-}
-}
+		return times;
+	}
+	
+	public static void main(String[] args){
+      
+	System.out.println(" " + countChars("This is the text where to find a character", 'i'));
+}	
 }
