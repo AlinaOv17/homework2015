@@ -1,7 +1,5 @@
 public class Buhuchet{
 public static void main(String[] args){
-	double sum = 0;
-	int a =0;
 	
 Empl[] worker = new Empl[10];
 worker[0] = new Empl(123890990, "Name1", " Surname1", 1500);
@@ -14,43 +12,63 @@ worker[6] = new Empl(678658768, "Name7", " Surname7", 637);
 worker[7] = new Empl(235436578, "Name8", " Surname8", 564);	
 worker[8] = new Empl(465768799, "Name9", " Surname9", 1009);	
 worker[9] = new Empl(132243679, "Name10", " Surname10", 1201);
-
-
-	  // finding the amount of all salaries 
+     // report about one worker
+	 System.out.println(" The data for  Name1 is  " + worker[0].toString()); 
+	
+	 // printing all salaries
+	 System.out.println("All salaries are " + allSal(worker));
+	 
+	 // printing the min salary
+	  System.out.println("The min salary is " + worker[minSal(worker)].toString() );
 	  
-	  for (int i = 0; i < worker.length; i++){
-		sum += worker[i].getSalary();
+      // Printing the max salary
+	  System.out.println("The max salary is " + worker[maxSal(worker)].toString() );
+	
+	  // report about all workers
+	  
+	     for( int i = 0; i < worker.length; i++){
+	   System.out.println(" " + worker[i].toString()); 
+    }
+	   
 }
-	  System.out.println(" All salaries are " + sum); 
+
+     // finding the amount of all salaries 
+	  
+	public static double allSal(Empl[] a){
+	double sum = 0;
+	
+	  for (int i = 0; i < a.length; i++){
+		sum += a[i].getSalary();
+	  }
+	  return sum;
+}
+
 	  
 	  // finding the min salary
 	  
-	  double min = worker[0].getSalary();
-      for (int i = 0; i < worker.length; i++){
-	   if(worker[i].getSalary() < min){
-		min = worker[i].getSalary();
+	  public static int minSal(Empl[] b){
+	  int a =0;	
+	  double min = b[0].getSalary();
+      for (int i = 0; i < b.length; i++){
+	   if(b[i].getSalary() < min){
+		min = b[i].getSalary();
 		a = i;
 	   } 
 	 }
-	 System.out.println(" The min salary is  " + worker[a].toString());
+	 return a;
+	  }
 	 
 	 // finding the max salary
-	 double max = worker[0].getSalary();
-	 for (int i = 0; i < worker.length; i++){
-	   if(worker[i].getSalary() > max){
-		max = worker[i].getSalary();
+	 public static int maxSal(Empl[] c){
+		 int a = 0;
+	 double max = c[0].getSalary();
+	 for (int i = 0; i < c.length; i++){
+	   if(c[i].getSalary() > max){
+		max = c[i].getSalary();
 		a = i;
 		} 
 	 }
-	 
-	 System.out.println(" The max salary is  " + worker[a].toString());
-	
-	//printing all the info about the employee
-	 
-	 System.out.println(" The data for  Name1 is  " + worker[0].toString()); 
-	  
-}
+	 return a;
 
 }
-
-
+}
