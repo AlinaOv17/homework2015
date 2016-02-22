@@ -3,6 +3,9 @@ private double height;
 private double base;
 private double a;
 private double c;
+private float r;
+private float g;
+private float b;
     public Triangle(){
 	 base = height= a= c = 0.0;
  }
@@ -35,6 +38,15 @@ this.c = c;
     public void setHeight(double height){
 this.height = height;
 }
+public float getR(){
+		return r;
+	}
+	public float getG(){
+		return g;
+	}
+	public float getB(){
+		return b;
+	}
 
 	public double getArea(){
 		return ((getBase() * getHeight())/2);
