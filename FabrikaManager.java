@@ -1,4 +1,5 @@
-public class FabrikaManager extends Empl{
+
+public class FabrikaManager extends Employee implements Comparable<Employee> {
 	private double bonus = 500;
 
 	public double getBonus() {
@@ -9,6 +10,7 @@ public class FabrikaManager extends Empl{
 		this.bonus = bonus;
 	}
 	
+
 	
 	public double getSalary() {
 		return super.getSalary() + bonus;
@@ -22,5 +24,7 @@ public class FabrikaManager extends Empl{
 	public FabrikaManager(int INN, String name, String surname, double salary) {
 		super(INN, name, surname, salary);
 	}
+	
+	
 
 }
